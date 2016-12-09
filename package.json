@@ -1,0 +1,19 @@
+{
+  "name": "interface-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-latest": "^6.16.0"
+  },
+  "scripts": {
+    "start": "npm run build && NODE_PATH=build node build/index.js",
+    "build": "babel -q src -d build",
+    "test": "npm run build && NODE_PATH=build mocha build/**/*_test.js",
+    "package": "npm run build && docker build -t interface-node:latest ."
+  },
+  "author": "",
+  "license": "ISC"
+}
