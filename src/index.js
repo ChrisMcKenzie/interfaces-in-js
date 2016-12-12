@@ -26,4 +26,4 @@ console.log(marathonDM)
 var mockDM = new deployment.Manager(new mock.MockScheduler())
 console.log(mockDM)
 
-// mockDM.GetProject("test")
+mockDM.GetProject("test")

@@ -8,11 +8,11 @@ export class Scheduler {
   }
 
   CreateApp(project) {
-    throw new Error("Not implemented");
+    console.log("CreateApp Not implemented")
   }
 
   GetApp(id) {
-    throw new Error("Not implemented");
+    console.log("GetApp Not implemented")
   }
 }
 
