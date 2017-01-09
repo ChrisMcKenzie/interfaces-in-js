@@ -14,7 +14,7 @@ describe('Balancer', function() {
       done(new Error("instantiated with invalid resolver"))
     });
 
-    it('should fail to instantiate if now resolver given', function(done) {
+    it('should fail to instantiate if no resolver given', function(done) {
       try {
         new RoundRobin();
       } catch(e) {
